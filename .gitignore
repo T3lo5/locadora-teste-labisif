@@ -1,0 +1,17 @@
+# Arquivos de configuração
+database.php
+
+# Logs e arquivos temporários
+log/
+temp/
+error_log
+
+# Arquivos compilados
+*.log
+*.gz
+
+# Arquivos de ambiente
+.env
+
+# Dependências geradas por Composer (ajuste conforme seu gerenciador de dependências)
+/vendor/

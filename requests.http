@@ -1,0 +1,45 @@
+### Criar um novo carro (POST)
+POST http://localhost:8000/locadora-teste-labsif-main/carros
+Content-Type: application/json
+
+{
+  "modelo": "Carro Novo",
+  "marca": "Marca X",
+  "descricao": "Descrição do carro",
+  "preco_aluguel": 50,
+  "categoria": "Econômico"
+}
+
+### Alugar um carro (POST)
+POST http://localhost:8000/locadora-teste-labsif-main/api/carros/alugar
+Content-Type: application/json
+
+{
+  "carro_id": 1,
+  "data_inicio": "2023-11-01 10:00:00",
+  "data_fim": "2023-11-03 18:00:00"
+}
+
+### Listar todos os carros (GET)
+GET http://localhost:8000/locadora-teste-labsif-main/api/carros
+
+### Obter detalhes de um carro específico (GET)
+GET http://localhost:8000/locadora-teste-labsif-main/api/carros/1
+
+### Atualizar um carro existente (PUT)
+PUT http://localhost:8000/locadora-teste-labsif-main/api/carros/1
+Content-Type: application/json
+
+{
+  "modelo": "Novo Modelo",
+  "marca": "Nova Marca"
+}
+
+### Excluir um carro (DELETE)
+DELETE http://localhost:8000/locadora-teste-labsif-main/api/carros/1
+
+### Listar carros disponíveis para aluguel (GET)
+GET http://localhost:8000/locadora-teste-labsif-main/api/carros/disponiveis
+
+### Listar carros alugados (GET)
+GET http://localhost:8000/locadora-teste-labsif-main/api/carros/alugados
